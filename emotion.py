@@ -6,7 +6,7 @@ import json
 from PIL import Image
 
 # Load model
-model = tf.keras.models.load_model("emotion_model.h5")
+model = tf.keras.models.load_model("emotion_model.h5", compile = False)
 
 # Load emotion labels
 with open("emotion_labels.json", "r") as f:
